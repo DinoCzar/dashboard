@@ -21,6 +21,10 @@
     grid-template-rows: 1fr 10fr;
 }
 
+#logo, #menu {
+    padding: 10px;
+}
+
 #logo {
     border: solid;
     border-width: 1px;
@@ -28,18 +32,18 @@
     grid-row-start: 1;
     grid-row-end: 2;
     display: grid;
-    grid-template-columns: 30px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
 
 #logo-image {
     border: solid;
     border-width: 1px;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     background-color: grey;
-    justify-self: center;
 }
 
 .logo-text {
@@ -52,18 +56,37 @@
     border-width: 1px;
     grid-row-start: 2;
     grid-row-end: 3;
+    display: grid;
+    gap: 40px;
+    align-content: start;
 }
 
-#menu ul li {
-    border: solid;
-    border-width: 1px;
-    list-style-type: none;
-    font-size: 16px;
-    justify-self: left;
+#menu-top, 
+#menu-bottom {
+    display: grid;
+    gap: 10px;
+}
+
+#menu-top {
+    grid-template-rows: repeat(6, 20px);
 }
 
 #menu-bottom {
-    margin-top: 20px;
+    grid-template-rows: repeat(3, 20px);
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 10px;
+}
+
+.menu-icon {
+    border: solid;
+    border-width: 1px;
+    width: 15px;
+    height: 15px;
+    background-color: grey;
 }
 
 #projects {
