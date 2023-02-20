@@ -50,6 +50,33 @@
 #header-account {
     padding: 5px;
     padding-right: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    gap: 20px;
+}
+
+#notification-icon {
+    border: solid;
+    border-width: 1px;
+    width:  15px;
+    height: 15px;
+    background-color: grey;
+    justify-self: end;
+}
+
+#account-icon {
+    border: solid;
+    border-width: 1px;
+    width:  15px;
+    height: 15px;
+    background-color: grey;
+    justify-self: end;
+}
+
+#name {
+    font-size: 12px;
+    justify-self: end;
 }
 
 #header-greeting {
