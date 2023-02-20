@@ -16,18 +16,20 @@
     grid-template-columns: 2fr 1fr;
 }
 
-#header-search {
+#header-search,
+#header-account,
+#header-greeting,
+#header-buttons {
     border: solid;
     border-width: 1px;
+    align-items: center;
+}
+
+#header-search {
     display: grid;
     grid-template-columns: 30px 1fr;
     padding: 5px;
     padding-left: 15px;
-}
-
-.header-section {
-    border: solid;
-    border-width: 1px;
 }
 
 #search-icon {
@@ -38,11 +40,34 @@
 #search-bar {
     border: solid;
     border-width: 1px;
-    width: 75px;
+    width: 1fr;
     height: 15px;
     background-color: grey;
     grid-column-start: 2;
     grid-column-end: 3;
+}
+
+#header-account {
+    padding: 5px;
+    padding-right: 15px;
+}
+
+#header-greeting {
+    padding: 5px;
+    padding-left: 15px;
+}
+
+#header-buttons {
+    padding: 5px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+button {
+    height: 30px;
+    width: 60px;
 }
 
 #sidebar {
