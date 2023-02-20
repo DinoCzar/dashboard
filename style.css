@@ -16,9 +16,33 @@
     grid-template-columns: 2fr 1fr;
 }
 
+#header-search {
+    border: solid;
+    border-width: 1px;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    padding: 5px;
+    padding-left: 15px;
+}
+
 .header-section {
     border: solid;
     border-width: 1px;
+}
+
+#search-icon {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#search-bar {
+    border: solid;
+    border-width: 1px;
+    width: 75px;
+    height: 15px;
+    background-color: grey;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 #sidebar {
@@ -89,7 +113,8 @@
     gap: 10px;
 }
 
-.menu-icon {
+.menu-icon,
+#search-icon {
     border: solid;
     border-width: 1px;
     width: 15px;
