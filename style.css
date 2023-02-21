@@ -8,8 +8,6 @@
 }
 
 #header {
-    border: solid;
-    border-width: 1px;
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-rows: 1fr 3fr;
@@ -20,8 +18,6 @@
 #header-account,
 #header-greeting,
 #header-buttons {
-    border: solid;
-    border-width: 1px;
     align-items: center;
 }
 
@@ -38,8 +34,6 @@
 }
 
 #search-bar {
-    border: solid;
-    border-width: 1px;
     width: 1fr;
     height: 15px;
     background-color: grey;
@@ -57,8 +51,6 @@
 }
 
 #notification-icon {
-    border: solid;
-    border-width: 1px;
     width:  15px;
     height: 15px;
     background-color: grey;
@@ -66,8 +58,6 @@
 }
 
 #account-icon {
-    border: solid;
-    border-width: 1px;
     width:  15px;
     height: 15px;
     background-color: grey;
@@ -89,8 +79,6 @@
 }
 
 #greeting-icon {
-    border: solid;
-    border-width: 1px;
     grid-area: 1 / 1 / 3 / 2;
     width: 30px;
     height: 30px;
@@ -98,15 +86,11 @@
 }
 
 #greeting {
-    border: solid;
-    border-width: 1px;
     grid-area: 1 / 2 / 2 / 3;
     font-size: 10px;
 }
 
 #username {
-    border: solid;
-    border-width: 1px;
     grid-area: 2 / 2 / 3 / 3;
     font-size: 14px;
 }
@@ -126,11 +110,12 @@ button {
     font-size: 10px;
     text-align: center;
     padding: 2px;
+    border: none;
+    background-color: lightblue;
+    border-radius: 5px 5px 5px 5px;
 }
 
 #sidebar {
-    border: solid;
-    border-width: 1px;
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
     grid-template-rows: 1fr 10fr;
@@ -142,8 +127,6 @@ button {
 }
 
 #logo {
-    border: solid;
-    border-width: 1px;
     font-size: 10px;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -155,21 +138,12 @@ button {
 }
 
 #logo-image {
-    border: solid;
-    border-width: 1px;
     width: 20px;
     height: 20px;
     background-color: grey;
 }
 
-.logo-text {
-    border: solid;
-    border-width: 1px;
-}
-
 #menu {
-    border: solid;
-    border-width: 1px;
     grid-row-start: 2;
     grid-row-end: 3;
     display: grid;
@@ -200,16 +174,12 @@ button {
 .menu-icon,
 #search-icon,
 .trend-icon {
-    border: solid;
-    border-width: 1px;
     width: 15px;
     height: 15px;
     background-color: grey;
 }
 
 #projects {
-    border: solid;
-    border-width: 1px;
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -218,8 +188,6 @@ button {
 }
 
 #project-cards {
-    border: solid;
-    border-width: 1px;
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
     grid-template-rows: 50px 1fr;
@@ -248,16 +216,16 @@ button {
 }
 
 .project {
-    border: solid;
-    border-width: 1px;
     padding: 5px;
     background-color: white;
+    border-left: solid;
+    border-left-width: 5px;
+    border-left-color: gold;
+    border-radius: 5px 5px 5px 5px;
 }
 
 #announcements,
 #trending {
-    border: solid;
-    border-width: 1px;
     display: grid;
     grid-template-rows: 50px 1fr;
 }
@@ -273,8 +241,6 @@ button {
 }
 
 #announcement-content {
-    border: solid;
-    border-width: 1px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     padding: 15px;
@@ -322,8 +288,6 @@ button {
 }
 
 .trend {
-    border: solid;
-    border-width: 1px;
     padding: 5px;
     display: grid;
     align-items: center;
@@ -336,8 +300,6 @@ button {
 }
 
 .trend-user {
-    border: solid;
-    border-width: 1px;
     grid-area: 1 / 2 / 2 / 3;
     overflow: hidden;
     font-size: 10px;
@@ -347,8 +309,6 @@ button {
 }
 
 .trend-description {
-    border: solid;
-    border-width: 1px;
     grid-area: 2 / 2 / 3 / 3;
     overflow: hidden;
     font-size: 8px;
