@@ -270,12 +270,35 @@ button {
 #announcement-content {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+    padding: 15px;
 }
 
 .announcement {
-    border: solid;
-    border-width: 1px;
     padding: 5px;
+    display: grid;
+    align-content: center;
+    gap: 2px;
+}
+
+#announcement-first {
+    border-bottom: solid;
+    border-color: grey;
+    border-width: 1px;
+}
+
+#announcement-last {
+    border-top: solid;
+    border-color: grey;
+    border-width: 1px;
+}
+
+.announcement-title {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.announcement-body {
+    font-size: 8px;
 }
 
 #trending {
