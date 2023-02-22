@@ -51,9 +51,6 @@
 }
 
 #notification-icon {
-    width:  15px;
-    height: 15px;
-    background-color: grey;
     justify-self: end;
 }
 
@@ -174,10 +171,10 @@ button {
 .menu-icon,
 #search-icon,
 .project-icon,
-.trend-icon {
-    width: 15px;
-    height: 15px;
-    background-color: grey;
+.trend-icon,
+#notification-icon {
+    width: 18px;
+    height: 18px;
 }
 
 #projects {
@@ -341,3 +338,10 @@ button {
     align-self: start;
     margin-top: 1px;
 }
+
+
+
+.white-icon {
+    fill: white;
+}
+
