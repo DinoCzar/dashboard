@@ -6,7 +6,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-rows: 100px 1fr;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 200px 1fr;
     border: solid;
     border-width: 1px;
 }
@@ -15,7 +15,8 @@ body {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-rows: 1fr 3fr;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 5fr 3fr;
+    padding-top: 10px;
 }
 
 #header-search,
@@ -43,6 +44,7 @@ body {
     background-color: #dbeafe;
     grid-column-start: 2;
     grid-column-end: 3;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #header-account {
@@ -106,14 +108,15 @@ body {
 }
 
 button {
-    height: 20px;
-    width: 40px;
+    height: 25px;
+    width: 65px;
     font-size: 10px;
     text-align: center;
     padding: 2px;
     border: none;
     background-color: #0ea5e9;
-    border-radius: 5px 5px 5px 5px;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #sidebar {
@@ -133,10 +136,9 @@ button {
     grid-row-start: 1;
     grid-row-end: 2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30px 1fr;
     gap: 10px;
     align-items: center;
-    justify-content: center;
 }
 
 #logo-image {
@@ -224,7 +226,7 @@ button {
     background-color: white;
     border-left: solid;
     border-left-width: 5px;
-    border-left-color: gold;
+    border-left-color: orange;
     border-radius: 5px 5px 5px 5px;
     display: grid;
     grid-template-rows: 30px 1fr 30px;
